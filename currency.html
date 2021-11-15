@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency Converter in Javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  <style>
+    body {
+      background: url(./currency-bg.jpg) center center/cover;
+      background-repeat: no-repeat;
+      min-height: 100%;
+      height: 100%;
+    }
+    html {
+      min-height: 100%;
+      height: 100%;
+    }
+    label {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 5em;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="bg-img"></div>
+    <div class="container">
+      <br /><br />
+      <h1>Currency Converter</h1>
+      <form id="myForm">
+        <br /><br />
+        <label for="Base Currency">Base Currency</label>
+        <select class="form-control" id="base">
+          <option>United State Dollar USD</option>
+          <option>Hong Kong Dollar HKD</option>
+          <option>Iceland Krona ISK</option>
+          <option>Philippines PHP</option>
+          <option>Denmark DKK</option>
+          <option>Hungary HUF</option>
+          <option>Czech Republic CZK</option>
+          <option>United Kingdom GBP</option>
+          <option>Romania RON</option>
+          <option>Sweden SEK</option>
+          <option>Indonesia IDR</option>
+          <option>India INR</option>
+          <option>Brazil BRL</option>
+          <option>Russian Federation RUB</option>
+          <option>Croatia HRK</option>
+          <option>Japanese yen JPY</option>
+          <option>Japan THB</option>
+          <option>Switzerland CHF</option>
+          <option>European EUR</option>
+          <option>Malaysian ringgit MYR</option>
+          <option>bulgarian BGN</option>
+          <option>The Turkish lira TRY</option>
+          <option>Republic of China CNY</option>
+          <option>Norway NOK</option>
+          <option>New Zealand Dollar NZD</option>
+          <option>South Africa ZAR</option>
+          <option>Chad CAD</option>
+          <option>Mexican peso MXN</option>
+          <option>Singapore dollar SGD</option>
+          <option>The Australian dollar AUD</option>
+          <option>Israeli ILS</option>
+          <option>South Korea KRW</option>
+          <option>Polish złoty PLN</option>
+        </select>
+        <br />
+        <div class="form-group">
+          <input type="number" class="form-control" id="baseNumber" value="1" />
+        </div>
+        <label for="Target Currency">Target Currency</label>
+        <select class="form-control" id="target">
+          <option>India INR</option>
+          <option>Hong Kong Dollar HKD</option>
+          <option>Iceland Krona ISK</option>
+          <option>Philippines PHP</option>
+          <option>Denmark DKK</option>
+          <option>Hungary HUF</option>
+          <option>Czech Republic CZK</option>
+          <option>United Kingdom GBP</option>
+          <option>Romania RON</option>
+          <option>Sweden SEK</option>
+          <option>Indonesia IDR</option>
+          <option>Chad CAD</option>
+          <option>Brazil BRL</option>
+          <option>Russian Federation RUB</option>
+          <option>Croatia HRK</option>
+          <option>Japanese yen JPY</option>
+          <option>Japan THB</option>
+          <option>Switzerland CHF</option>
+          <option>European EUR</option>
+          <option>Malaysian ringgit MYR</option>
+          <option>bulgarian BGN</option>
+          <option>The Turkish lira TRY</option>
+          <option>Republic of China CNY</option>
+          <option>Norway NOK</option>
+          <option>New Zealand Dollar NZD</option>
+          <option>South Africa ZAR</option>
+          <option>United State Dollar USD</option>
+          <option>Mexican peso MXN</option>
+          <option>Singapore dollar SGD</option>
+          <option>The Australian dollar AUD</option>
+          <option>Israeli ILS</option>
+          <option>South Korea KRW</option>
+          <option>Polish złoty PLN</option>
+        </select>
+        <br />
+        <div class="form-group">
+          <input type="number" class="form-control" id="targetNumber" />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
